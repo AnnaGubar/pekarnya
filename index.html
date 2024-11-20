@@ -29,9 +29,23 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="header__button button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
+
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24" viewBox="0 0 32 32">
+              <path
+                d="M29.333 24.007c0 0.733-0.595 1.327-1.327 1.327h-10.68c-0.352 0-0.689-0.14-0.938-0.389s-0.389-0.586-0.389-0.938c0-0.352 0.14-0.689 0.389-0.938s0.586-0.389 0.938-0.389h10.68c0.733 0 1.327 0.593 1.327 1.327zM29.333 16c0 0.733-0.595 1.327-1.327 1.327h-24.013c-0.352 0-0.689-0.14-0.938-0.389s-0.389-0.586-0.389-0.938c0-0.352 0.14-0.689 0.389-0.938s0.586-0.389 0.938-0.389h24.013c0.733 0 1.327 0.595 1.327 1.327zM28.007 9.32c0.352 0 0.689-0.14 0.938-0.389s0.389-0.586 0.389-0.938c0-0.352-0.14-0.689-0.389-0.938s-0.586-0.389-0.938-0.389h-16.013c-0.174 0-0.347 0.034-0.508 0.101s-0.307 0.164-0.43 0.288c-0.123 0.123-0.221 0.269-0.288 0.43s-0.101 0.333-0.101 0.508c0 0.174 0.034 0.347 0.101 0.508s0.164 0.307 0.288 0.43c0.123 0.123 0.269 0.221 0.43 0.288s0.333 0.101 0.508 0.101h16.013z"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -42,6 +56,12 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </section>
 
@@ -85,7 +105,12 @@
               </p>
             </div>
 
-            <img src="./images/baker-man.jpg" alt="Пекар дивиться на хліб" />
+            <img
+              class="traditions-section__image"
+              srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x"
+              src="./images/baker-man.jpg"
+              alt="Пекар дивиться на хліб"
+            />
           </div>
         </div>
       </section>
@@ -438,6 +463,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
