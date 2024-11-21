@@ -1,20 +1,23 @@
 .format-card {
-  /* max-width: 349px; */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 444px;
-  padding: 24px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55.21%,
-    rgba(49, 38, 26, 0.71) 72.92%,
-    var(--color-primary-dark) 100%
-  );
-  border: 1px solid lightcoral;
-  border-radius: 16px;
   transition: transform 0.3s;
+
+  &__container {
+    /* max-width: 349px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 444px;
+    padding: 24px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55.21%,
+      rgba(49, 38, 26, 0.71) 72.92%,
+      var(--color-primary-dark) 100%
+    );
+    border-radius: 16px;
+    overflow: hidden;
+  }
 
   &:hover {
     transform: scale(1.05);
